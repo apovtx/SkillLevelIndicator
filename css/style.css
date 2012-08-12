@@ -1,0 +1,17 @@
+﻿.canvas #nosupport, .no-js #nosupport {
+	display: none;
+	visibility: none;
+}
+
+#nosupport {
+	display: block;
+	visibility: visible;
+}
+
+html { height: 100% }
+body { height: 100%; margin: 0; padding: 0 }
+
+#myCanvas {
+	border: 1px solid #9C9898;
+	width: 960px;
+}
