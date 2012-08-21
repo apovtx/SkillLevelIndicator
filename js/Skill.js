@@ -18,8 +18,8 @@ function SkillIndicator(context, options) {
 			level = options.level || 50,
 			name = options.name || "canvas",
 			radius = options.radius || 70,
-			lineWidth = options.lineWidth || 15,
-			fontSize = options.fontSize || '35pt',
+			lineWidth = options.lineWidth || 0.2*radius,
+			fontSize = options.fontSize || (radius/name.length * 2.2)+'px',
 			font = options.font || "italic " + fontSize + " Calibri",
 			fontColor = options.fontColor || "white";
 		
@@ -37,5 +37,5 @@ function SkillIndicator(context, options) {
 		context.font = font;
 		context.textAlign = 'center';
 		context.fillStyle = fontColor;
-		context.fillText(name, X, Y+(radius*0.20));
+		context.fillText(name, X, Y+(radius*0.2));
 }

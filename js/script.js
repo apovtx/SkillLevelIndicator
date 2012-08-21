@@ -14,31 +14,32 @@ function initialize() {
 	
 	SkillIndicator(context, 
 		{
-			X: canvas.width / 2,
-			Y: canvas.height / 2,
-			radius: 70,
-			name: 'CSS'
-			
-		});
-	SkillIndicator(context, 
-		{
 			X: canvas.width / 5,
 			Y: canvas.height / 2,
-			radius: 70,
+			radius: 20,
 			name: 'JS',
-			level: 75,
+			level: 64,
 			color: '#8EDddd'
 			
 		});
+	
+	SkillIndicator(context, 
+		{
+			X: canvas.width / 2,
+			Y: canvas.height / 2,
+			radius: 50,
+			name: 'CSS',
+			
+		});
+	
 	SkillIndicator(context, 
 		{
 			X: canvas.width-(canvas.width/5),
 			Y: canvas.height / 2,
-			radius: 70,
+			radius: 100,
 			name: 'HTML5',
 			level: 75,
-			color: '#8EDddd',
-			fontSize: '28pt'
+			color: '#8EDddd'
 		});		
 }
 
